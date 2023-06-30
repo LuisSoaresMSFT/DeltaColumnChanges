@@ -6,6 +6,7 @@ The methods for delta source selection can be:
 -  Between 2 delta versions
 -  Between timestamps
 -  Providing only the starting version or timestamp
+
 If the selected method returns more than 2 records per key, only the oldest and newest records are used for the delta comparison, which makes this solution flexible in the way the delta source is selected.
 
 Example. Get from
