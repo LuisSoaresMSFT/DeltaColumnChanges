@@ -193,7 +193,7 @@ WHERE s1._change_type IN ('update_preimage', 'insert') AND s2._change_type = 'up
 -- MAGIC display(df_melted)
 -- MAGIC
 -- MAGIC # clean the dataset
--- MAGIC df_melted_clean = df_melted[df_pivot['value'] != '']
+-- MAGIC df_melted_clean = df_melted[df_melted['value'] != '']
 -- MAGIC display(df_melted_clean)
 -- MAGIC
 
